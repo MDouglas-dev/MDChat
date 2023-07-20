@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Colors*/
+    --text: rgba(225, 225, 230, 1);
+    --text-on: rgba(0, 179, 126, 1);
+    --bg-msg-sent: rgba(7, 132, 126, 1);
+    --bg-msg-received: rgba(99, 59, 188, 1);
+    --bg-app: rgba(26, 25, 36, 1);
+    --bg-input-msg: rgba(40, 40, 67, 1);
+}
+
+body {
+    background: var(--bg-app);
+    color: var(--text);
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.88rem;
+}
+
+/* User contact Info-Status */
+.user-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.625rem;
+    align-self: stretch;
+}
+
+.user-contact--info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.user-contact--info img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+}
+
+.user-contact--status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+.user-contact--status h1 {
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.user-contact--status p {
+    color: var(--text-on);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+/* Style Mensage */
+
+.msg-received {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+}
+
+.msg-received span, .msg-sent span {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.msg-received p {
+    background: var(--bg-msg-received);
+    padding: 0.875rem;
+    border-radius: 0rem 0.5rem 0.5rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.msg-sent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.msg-sent p {
+    background: var(--bg-msg-sent);
+    padding: 0.875rem;
+    border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+/* Span Status style */
+.online {
+    display: inline-flex;
+    padding:  0.3rem;
+    background: var(--text-on);
+    border-radius: 100%;
+    margin-right: 0.25rem;
+}
+
+.mesage-date {
+    text-align: center;
+    font-size: 0.75rem;
+}
