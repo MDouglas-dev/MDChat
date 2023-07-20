@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDChat</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="app">
-        <div class="user-contact">
-            <div class="user-contact--info">
-                <img src="./assets/images/foto.png" alt="User Foto">
-                <div class="user-contact--status">
-                    <h1>Cecilia Sassaki</h1>
-                        <span><i class="online"></i> Online</span>
-                    </div>
-                    <a href="#"><img src="./assets/images/close.svg" alt="close chat"></a>
-            </div>
-            <div class="mesage-date">
-                <p>Hoje 11:30</p>
-            </div>
+      <div class="user-contact">
+        <div class="user-contact--info">
+          <img src="./assets/images/foto.png" alt="User Foto" />
+          <div class="user-contact--status">
+            <h1>Cecilia Sassaki</h1>
+            <span><i class="online"></i> Online</span>
+          </div>
+          <a href="#"
+            ><img src="./assets/images/close.svg" alt="close chat"
+          /></a>
         </div>
+        <div class="mesage-date">
+          <p>Hoje 11:30</p>
+        </div>
+      </div>
+      <div id="body-msg">
         <div class="msg-received">
-            <span>Cecilia - 11:30</span>
-            <p>Tive uma ideia incrível para um projeto! 😍</p>
+          <span>Cecilia - 11:30</span>
+          <p>Tive uma ideia incrível para um projeto! 😍</p>
         </div>
         <div class="msg-sent">
-            <span>Você - 11:32</span>
-            <p>Sério? Me conta mais.</p>
+          <span>Você - 11:32</span>
+          <p>Sério? Me conta mais.</p>
         </div>
         <div class="msg-received">
-            <span>Cecilia - 11:34</span>
-            <p>E se a gente fizesse um chat moderno e responsivo em apenas uma semana?</p>
+          <span>Cecilia - 11:34</span>
+          <p>
+            E se a gente fizesse um chat moderno e responsivo em apenas uma
+            semana?
+          </p>
         </div>
         <div class="msg-sent">
-            <span>Você - 11:36</span>
-            <p>#boraCodar! 🚀</p>
+          <span>Você - 11:36</span>
+          <p>#boraCodar! 🚀</p>
         </div>
 
         <div class="input-msg">
-            <input type="text" name="input-msg" id="input-msg" placeholder="Digite sua mensagem">
-            <a href="#"><img src="./assets/images/send.svg" alt="Enviar mensagem"></a>
+          <input
+            type="text"
+            name="input-msg"
+            id="input-msg"
+            placeholder="Digite sua mensagem"
+          />
+          <a href="#"
+            ><img src="./assets/images/send.svg" alt="Enviar mensagem"
+          /></a>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

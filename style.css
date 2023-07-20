@@ -72,7 +72,23 @@ body {
     font-weight: 400;
 }
 
+.online {
+    display: inline-flex;
+    padding:  0.3rem;
+    background: var(--text-on);
+    border-radius: 100%;
+    margin-right: 0.25rem;
+}
+
 /* Style Mensage */
+#body-msg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* Span Status style */
+    width: 100%;
+    height: 100vh;
+}
 
 .msg-received {
     width: 100%;
@@ -107,24 +123,19 @@ body {
     font-size: 0.75rem;
 }
 
-/* Span Status style */
-.online {
-    display: inline-flex;
-    padding:  0.3rem;
-    background: var(--text-on);
-    border-radius: 100%;
-    margin-right: 0.25rem;
-}
-
 .mesage-date {
     text-align: center;
     font-size: 0.75rem;
 }
 
+/* Input Mensagem */
 .input-msg {
     display: flex;
     align-items: center;
     align-self: stretch;
+    position: fixed;
+    bottom: 5px;
+    width: 90vw;
 }
 
 .input-msg input[type="text"] {
@@ -145,5 +156,5 @@ textarea:focus ,input:focus, select:focus {
 .input-msg a {
     display: flex;
     position: absolute;
-    right: 65px;
+    right: 35px;
 }
